@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+    <title>Chemistry</title>
+</head>
+<body>
+<form onsubmit="event.preventDefault(); doBalance();">
+    <table class="noborder">
+        <tbody>
+        <div class="container">
+            <h2>Equation Balancer</h2>
+            <div class="search-box">
+                <input
+                        type="text"
+                        placeholder="Enter the equation..."
+                        id="inputFormula"
+                        autocomplete="off"
+                />
+                <button id="search-btn" type="submit" class="button" onclick="doBalance();">Balance</button>
+                <button id="search-btn" type="button" class="button" onclick="doRandom();">Random</button>
+            </div>
+            <div class="result" id="result"></div>
+            <h4>Balanced Equation:</h4>
+            <output id="balanced" for="inputFormula">
+                <output xmlns="http://www.w3.org/1999/xhtml" id="balanced" for="inputFormula"></output>
+            </output>
+            <output id="message" for="inputFormula"></output>
+        </div>
+        <tr xmlns="http://www.w3.org/1999/xhtml">
+            <td></td>
+            <td>
+                <output for="inputFormula"><code id="codeOutput"></code></output>
+            </td>
+        </tr>
+        <!-- Script -->
+        <script src="script.js"></script>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
