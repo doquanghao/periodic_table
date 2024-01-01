@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tex/flutter_tex.dart';
 import 'package:periodic_table/model/ElementData.dart';
 import 'package:periodic_table/screen/home/view/model_3d_page.dart';
 
@@ -143,8 +142,9 @@ class DetailPage extends StatelessWidget {
                         ? Row(
                             children: [
                               Expanded(
-                                child: TeXView(
-                                  child: TeXViewDocument("- ${element.no_1}"),
+                                child: Text(
+                                  "- ${element.no_1}",
+                                  maxLines: null,
                                 ),
                               ),
                             ],
@@ -154,8 +154,9 @@ class DetailPage extends StatelessWidget {
                         ? Row(
                             children: [
                               Expanded(
-                                child: TeXView(
-                                  child: TeXViewDocument("- ${element.no_2}"),
+                                child: Text(
+                                  "- ${element.no_2}",
+                                  maxLines: null,
                                 ),
                               ),
                             ],
@@ -165,8 +166,9 @@ class DetailPage extends StatelessWidget {
                         ? Row(
                             children: [
                               Expanded(
-                                child: TeXView(
-                                  child: TeXViewDocument("- ${element.no_3}"),
+                                child: Text(
+                                  "- ${element.no_3}",
+                                  maxLines: null,
                                 ),
                               ),
                             ],
@@ -176,8 +178,9 @@ class DetailPage extends StatelessWidget {
                         ? Row(
                             children: [
                               Expanded(
-                                child: TeXView(
-                                  child: TeXViewDocument("- ${element.no_4}"),
+                                child: Text(
+                                  "- ${element.no_4}",
+                                  maxLines: null,
                                 ),
                               ),
                             ],
@@ -187,8 +190,9 @@ class DetailPage extends StatelessWidget {
                         ? Row(
                             children: [
                               Expanded(
-                                child: TeXView(
-                                  child: TeXViewDocument("- ${element.no_5}"),
+                                child: Text(
+                                  "- ${element.no_5}",
+                                  maxLines: null,
                                 ),
                               ),
                             ],
