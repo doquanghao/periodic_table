@@ -21,7 +21,10 @@ class ElementTile extends StatelessWidget implements PreferredSizeWidget {
             style: const TextStyle(fontSize: 12.0, color: Colors.black)),
       ),
       Text(element.symbol,
-          style: const TextStyle(fontSize: 16.0, color: Colors.black,fontWeight:FontWeight.w900)),
+          style: const TextStyle(
+              fontSize: 16.0,
+              color: Colors.black,
+              fontWeight: FontWeight.w900)),
       Text(
         element.name,
         maxLines: 1,

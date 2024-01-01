@@ -12,12 +12,16 @@ class Model3DPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Mô hình 3D"),
       ),
-      body: ModelViewer(
-        src: modelLink,
-        alt: "A 3D model of an astronaut",
-        ar: true,
-        autoRotate: true,
-        cameraControls: true,
+      body: SizedBox(
+        width: 200,
+        height: 200,
+        child: ModelViewer(
+          src: modelLink,
+          alt: "A 3D model of an astronaut",
+          ar: true,
+          autoRotate: true,
+          cameraControls: true,
+        ),
       ),
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:periodic_table/model/ElementData.dart';
-import 'package:periodic_table/screen/home/view/balancer.dart';
 import 'package:periodic_table/screen/home/view/model_3d_page.dart';
 
 class DetailPage extends StatelessWidget {
